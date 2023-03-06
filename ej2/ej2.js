@@ -7,7 +7,7 @@ function isLeapYear(num1, num2){
     //Se redondean los números
     Math.round(num1) && Math.round(num2)
     while(num1 < num2){    
-        if(num1 % 4 === 0 || num2 % 4 === 0){
+        if(num1 % 4 === 0 || num1 % 100 && num1 % 400){
             leapYears++
             num1++
         }
